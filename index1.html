@@ -1,0 +1,62 @@
+<! this is a file for the LG remote 6711A20128S >
+<! indoor unit LG LAN096HV  >
+<html>
+<title>Web Remote Control</title>
+<head>
+<link rel="icon" sizes="144x144" href="Raspi-144x144.png">
+</head>
+<body>
+<h2>A/C Control</h2>
+</center>
+              
+ <form METHOD=get action="test.php">
+ <select name="system">
+ <option value="0">Cool</option>
+ <option value="4">Heat</option>
+ <option value="1">Dry</option>       
+ <option value="3">Auto</option>       
+ </select>
+ <select name="temp">
+ <option value="F">Temp 88</option>
+ <option value="E">Temp 86</option>
+ <option value="D">Temp 84</option>
+ <option value="C">Temp 82</option>
+ <option value="B">Temp 80</option>
+ <option value="A">Temp 78</option>
+ <option value="9">Temp 76</option>
+ <option value="8">Temp 74</option>
+ <option value="7">Temp 72</option>
+ <option value="6">Temp 70</option>
+ <option value="5">Temp 68</option>
+ <option value="4">Temp 66</option>
+ <option value="3">Temp 64</option>
+ <option value="2">Temp 62</option>
+ <option value="1">Temp 60</option>
+ </select>
+ <select name="fan">
+ <option value="0">Fan low</option>
+ <option value="2">Fan medium</option>
+ <option value="4">Fan high</option>       
+ <option value="5">Fan Chaos</option>       
+ </select>
+               
+ <input type="submit" name="Submit" value="On">
+ <input type="submit" name="Submit" value="Change">
+ <input type="submit" name="Submit" value="Off">
+<br>
+ Start:  <input type="time" name="on">
+ Stop:  <input type="time" name="off">
+               
+ <input type="submit" name="Submit" value="Set">
+ <input type="submit" name="Submit" value="Cancel">
+<br>
+ Sleep:  <input type="number" name="sleep" min="1" max="1439">
+               
+ <input type="submit" name="Submit" value="Sleep">
+<br>
+ <input type="submit" name="Submit" value="Jet">
+ <input type="submit" name="Submit" value="Heat-68-Hi">
+ <input type="submit" name="Submit" value="Heat-68-Med">
+ <input type="submit" name="Submit" value="Cool-72-Med">
+ </form>
+<br>
